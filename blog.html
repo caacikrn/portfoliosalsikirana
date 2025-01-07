@@ -36,9 +36,12 @@
     .gallery-item {
       width: 200px;
       display: none;
+      text-align: center;
     }
     .gallery-item img {
       width: 100%;
+      height: 150px;
+      object-fit: cover;
       border-radius: 10px;
       transition: transform 0.3s;
     }
@@ -48,14 +51,13 @@
     .gallery-item a {
       text-decoration: none;
       color: #000;
-      text-align: center;
       display: block;
       margin-top: 5px;
     }
   </style>
 </head>
 <body>
-  <h1 style="text-align:center; margin: 20px;">Portfolio Gallery</h1>
+  <h1 style="text-align:center; margin: 20px;">Portfolio Gallery By Salsi Kirana Laura Ibra</h1>
   <div class="filter-buttons">
     <button class="active" onclick="filterSelection('all')">All</button>
     <button onclick="filterSelection('projects')">Projects</button>
@@ -77,44 +79,55 @@
     </div>
     <div class="gallery-item projects">
       <a href="https://caacikrn.github.io/dashboard/" target="_blank">
-        <img src="assets/img/dashboard admin.jpg" alt="Project 2">
+        <img src="assets/img/dashboard admin.jpg" alt="Project 3">
         <p>Dashboard Admin</p>
       </a>
     </div>
     <div class="gallery-item projects">
       <a href="https://caacikrn.github.io/portfoliosalsikirana/" target="_blank">
-        <img src="assets/img/portfolio.jpg" alt="Project 2">
+        <img src="assets/img/portfolio.jpg" alt="Project 4">
         <p>Portfolio</p>
       </a>
     </div>
     <div class="gallery-item projects">
       <a href="https://caacikrn.github.io/snakegame/" target="_blank">
-        <img src="assets/img/game snake.jpg" alt="Project 2">
+        <img src="assets/img/game snake.jpg" alt="Project 5">
         <p>Game Ular</p>
       </a>
     </div>
     <div class="gallery-item projects">
-      <a href="https://caacikrn.github.io/diagrampenjualansalsikirana//" target="_blank">
-        <img src="assets/img/diagram penjualan tahunan.jpg" alt="Project 2">
+      <a href="https://caacikrn.github.io/diagrampenjualansalsikirana/" target="_blank">
+        <img src="assets/img/diagram penjualan tahunan.jpg" alt="Project 6">
         <p>Diagram Penjualan Tahunan</p>
       </a>
     </div>
-        
+
     <!-- Certificates -->
     <div class="gallery-item certificates">
-      <a href="assets/certificates/certificate1.pdf" target="_blank">
+      <a href="https://www.sololearn.com/certificates/CC-CNUFPK9R" target="_blank">
         <img src="assets/img/intro html.jpg" alt="Certificate 1">
-        <p>Certificate 1</p>
+        <p>Introduction to HTML</p>
       </a>
     </div>
     <div class="gallery-item certificates">
-      <a href="assets/certificates/certificate2.pdf" target="_blank">
+      <a href="https://www.sololearn.com/certificates/CC-APR3IWNWf" target="_blank">
         <img src="assets/img/intro css.jpg" alt="Certificate 2">
-        <p>Certificate 2</p>
+        <p>Introduction to CSS</p>
+      </a>
+    </div>
+    <div class="gallery-item certificates">
+      <a href="https://www.sololearn.com/certificates/CC-BCAJJETU" target="_blank">
+        <img src="assets/img/intro java.jpg" alt="Certificate 3">
+        <p>Introduction to JavaScript</p>
+      </a>
+    </div>
+    <div class="gallery-item certificates">
+      <a href="https://www.sololearn.com/certificates/CC-B5I1RAYC" target="_blank">
+        <img src="assets/img/java intermediate.jpg" alt="Certificate 4">
+        <p>JavaScript Intermediate</p>
       </a>
     </div>
   </div>
-  
   <script>
     function filterSelection(category) {
       const items = document.querySelectorAll('.gallery-item');
@@ -137,4 +150,3 @@
   </script>
 </body>
 </html>
-
